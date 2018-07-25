@@ -1,0 +1,1 @@
+let Coraline = require('Coraline');
