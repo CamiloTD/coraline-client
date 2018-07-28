@@ -9,9 +9,9 @@ let foo = io();
 
 (async () => {
 	let coraline, client;
-	// [Coraline].create(pass, config)
+	// [Coraline].create(config)
 		try {
-			coraline = await (new Coraline(sock)).create('C0ral1n3', {
+			coraline = await (new Coraline(sock)).create({
 				name: "Testing Coraline"
 			});
 
