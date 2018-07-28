@@ -27,10 +27,10 @@ app.use(function (rq, rs, next) {
 	} else next();
 });
 
-app.use(express.static('public'));
+app.use(express.static('test'));
 
 app.get('/coraline-client.js', (rq, rs) => {
-	rs.sendFile(path.join(__dirname, '../src/coraline-client.js'));
+	rs.sendFile(path.join(__dirname, './src/coraline-client.js'));
 });
 
 

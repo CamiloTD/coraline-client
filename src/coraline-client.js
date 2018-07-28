@@ -1,6 +1,4 @@
 /** Coraline front-end module, for programming endpoints
-*	
-*	@module coraline-client
 *	@requires EventEmitter
 */
 let EventEmitter = require('EventEmitter');

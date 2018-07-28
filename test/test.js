@@ -22,7 +22,7 @@ let foo = io();
 	// [Coraline].login(coraline_id[, pass])
 		try {
 			client = await (new Coraline(sock)).login(coraline.id);
-			success('[Coraline].login(pass, config)')
+			success('[Coraline].login(pass, config)');
 		} catch (exc) {
 			failure('[Coraline].login(pass, config)', exc);
 		}
