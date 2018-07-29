@@ -3,6 +3,8 @@
 
 **If you are searching for the back-end core library, please look at:**  [coraline-core](https://github.com/CamiloTD/coraline)
 
+**API Docs:**  [coraline-core](https://camilotd.github.io/coraline-client)
+
 This is the client library of Coraline Project, with this library you can create front-end **clients** and **servers** for programming **LAN** interactive screens.
 
 
