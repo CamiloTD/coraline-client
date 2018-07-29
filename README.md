@@ -9,7 +9,7 @@ This is the client library of Coraline Project, with this library you can create
 
 
 ### About this:
-This repository is not *"batteries included"*, that means its not made for creating coralines by itself, if you want to create interactive content, and not to contribute to **coraline-core** you may want to see: [coraline-cli](https://github.com/CamiloTD/coraline-cli)
+This repository is not *"batteries included"*, that means its not made for creating coralines by itself, if you want to create interactive content, and not to contribute to **coraline-client** you may want to see: [coraline-cli](https://github.com/CamiloTD/coraline-cli)
 
 **This repo is only for programming the library**
 
