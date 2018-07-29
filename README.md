@@ -1,7 +1,7 @@
 # coraline-client
 **Coraline-core is the front-end library of the Coraline Project**
 
-**If you are searching for the back-end core library, please look at:**  [coraline-core](https://github.com/CamiloTD/coraline)
+**If you are searching for the back-end core library, please look at:**  [coraline-core](https://github.com/CamiloTD/coraline-core)
 
 **API Docs:**  [API Docs](https://camilotd.github.io/coraline-client)
 

@@ -42,6 +42,14 @@ let foo = io();
 		} catch (exc) {
 			failure('[CoralineClient].message(target, signal, ...data)', exc);
 		}
+	// [CoralineClient].message(signal, ...data) - onmessage API
+		coraline.mmanager.once('ping', () => success('[CoralineClient].message(target, signal, ...data) - mmanager'));
+		
+		try {
+			await client.message('ping');
+		} catch (exc) {
+			failure('[CoralineClient].message(target, signal, ...data) - mmanager', exc);
+		}
 	// [CoralineInstance].query(target, signal, ...data)
 		client.onquery('ping', () => 'pong');
 

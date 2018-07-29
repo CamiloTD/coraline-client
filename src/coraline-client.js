@@ -44,6 +44,13 @@ let EventEmitter = require('EventEmitter');
 				this.qmanager = new EventEmitter();
 
 				/**
+				*	Message EventEmitter 
+				*	
+				*	@member {EventEmitter}
+				*/
+				this.mmanager = new EventEmitter();
+
+				/**
 				*	Coraline ID
 				*	@readonly
 				*	@member {number}
@@ -69,6 +76,7 @@ let EventEmitter = require('EventEmitter');
 
 				sock.on('message', (src, signal, ...args) => {
 					this.emit('message', src, signal, ...args);
+					this.mmanager.emit(signal, src, ...args);
 					this.clients[src] && this.clients[src].emit(signal, ...args);
 				});
 
@@ -122,6 +130,18 @@ let EventEmitter = require('EventEmitter');
 						this.resolve(src, iid, res);
 
 				});
+				return this;
+			}
+
+			/**
+			*	Adds a listener to a message event
+			*
+			*	@param {String}   		  signal - Event name to listen
+			*	@param {Function(...Any)} cb 	 - Callback fired each time a query with the specified signal is received
+			*/
+			onmessage (signal, cb) {
+				this.mmanager.on(signal, cb);
+
 				return this;
 			}
 
