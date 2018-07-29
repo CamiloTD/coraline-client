@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node test",
-    "generate-docs": "node_modules/.bin/jsdoc -c jsdoc.json",
-    "generate-wiki": "node_modules/.bin/wicked"
+    "generate-docs": "node_modules/.bin/jsdoc -c jsdoc.json"
   },
   "author": "CamiloTD",
   "license": "GPL-3.0-or-later",
