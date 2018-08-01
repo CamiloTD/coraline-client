@@ -483,16 +483,17 @@ let EventEmitter = require('EventEmitter');
 		/**
 		*	Creates a <b>CoralineInstance</b>
 		*
+		*	@param {Object} pass   - Server security password
 		*	@param {Object} config - Coraline Configuration Object
 		*	@param {number} config.max_clients - Max number of clients allowed
 		*	@param {String} config.password    - Security password
 		*/
-		create (config =  {}) {
+		create (pass, config =  {}) {
 			config.password = config.password || "";
 			return new Promise ((done, err) => {
 				let sock = this.sock;
 
-				sock.emit('create', config);
+				sock.emit('create', pass, config);
 				sock.once('create-failed', err);
 				sock.once('create-success', (coraline) => {
 					done(new CoralineInstance(sock, coraline))

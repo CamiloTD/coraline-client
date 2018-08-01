@@ -11,7 +11,7 @@ let foo = io();
 	let coraline, client;
 	// [Coraline].create(config)
 		try {
-			coraline = await (new Coraline(sock)).create({
+			coraline = await (new Coraline(sock)).create('C0ral1n3', {
 				name: "Testing Coraline"
 			});
 
